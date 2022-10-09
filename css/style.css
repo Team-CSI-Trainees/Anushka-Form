@@ -25,6 +25,9 @@ height: 100vh;
     margin-left: 40px;
     margin-bottom: 30px;
 }
+.formerror{
+    color: red;
+}
 input{
     width: 100%;
     padding: 10px;
