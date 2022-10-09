@@ -10,28 +10,28 @@
 <body>
     <!--<img src="../images/anime-scenery--wallpaper.jpeg">-->
     <div class="form-box">
-    <form class="form">
+    <form class="form" name="myForm" action="/myaction.php" onsubmit="return validateForm()" method="post">
         <div class="row">
-            <div class="input-group">
-                <input type="text" ><br>
-                <label for="name">Name</label>
+            <div class="input-group" id="name">
+                <input type="text" name="fname" ><br><b><span class="formerror"></span></b>
+                <label >Name</label>
             </div>
-            <div class="input-group">
-                <input type="tel" ><br>
+            <div class="input-group" id="phone">
+                <input type="tel" name="fphone"  ><br><b><span class="formerror"></span></b>
                 <label>Phone no.</label>
             </div>
             </div>
-            <div class="input-group">
-                <input type="email" ><br>
+            <div class="input-group" id="email">
+                <input type="email" name="fmail"  ><br>
                 <label>Email</label>
             </div>
             <div class="row">
-            <div class="input-group">
-                <input type="password" ><br>
+            <div class="input-group" id="pass">
+                <input type="password" name="fpass" ><br>
                 <label>Password</label>
             </div>
-            <div class="input-group">
-                <input type="password" ><br>
+            <div class="input-group" id="cpass">
+                <input type="password" name="fcpass"  ><br>
                 <label>Confirm Password</label>
             </div>
             </div>
@@ -40,5 +40,6 @@
             </div>
     </form>
     </div>
+    <script src="../javascript/command.js"></script>
 </body>
 </html>
