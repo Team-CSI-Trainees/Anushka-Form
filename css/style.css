@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding:0;
+}
+img{
+width: 100vw;
+height: 100vh;
+
+}
+.form-box{
+  position: absolute;
+  left: 33%;
+  top: 30%;
+}
+.form{
+    margin: 80px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-group{
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    background-color: transparent;
+    border: 1px #484848 solid;
+}
+label{
+    position: absolute;
+    height:100%;
+    top:0px;
+    left:2px;
+    color: #484848;
+    transition: 0.5s;
+    cursor: text;
+}
+input:focus~label
+{
+    top:-25px;
+    font-size: 14px;
+}
+.btnn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 10px;
+    width: 80px;
+}
