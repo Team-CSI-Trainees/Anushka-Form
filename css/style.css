@@ -44,10 +44,13 @@ label{
     transition: 0.5s;
     cursor: text;
 }
+
+
 input:focus~label
 {
-    top:-25px;
+    top:-35px;
     font-size: 14px;
+    
 }
 .btnn{
     display: flex;

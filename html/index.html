@@ -10,7 +10,7 @@
 <body>
     <!--<img src="../images/anime-scenery--wallpaper.jpeg">-->
     <div class="form-box">
-    <form class="form" name="myForm" action="/myaction.php" onsubmit="return validateForm()" method="post">
+    <form class="form" name="myForm" action="/myaction.php" onsubmit="event.preventDefault(); return validateForm()" method="post">
         <div class="row">
             <div class="input-group" id="name">
                 <input type="text" name="fname" ><br><b><span class="formerror"></span></b>
@@ -22,16 +22,16 @@
             </div>
             </div>
             <div class="input-group" id="email">
-                <input type="email" name="fmail"  ><br>
+                <input type="email" name="fmail"><br><b><span class="formerror"></span></b>
                 <label>Email</label>
             </div>
             <div class="row">
             <div class="input-group" id="pass">
-                <input type="password" name="fpass" ><br>
+                <input type="password" name="fpass" ><br><b><span class="formerror"></span></b>
                 <label>Password</label>
             </div>
             <div class="input-group" id="cpass">
-                <input type="password" name="fcpass"  ><br>
+                <input type="password" name="fcpass"><br><b><span class="formerror"></span></b>
                 <label>Confirm Password</label>
             </div>
             </div>
