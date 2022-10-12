@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/fbbb339c71.js" crossorigin="anonymous"></script>
     <title>Form</title>
 </head>
+
 <body>
-    <!--<img src="../images/anime-scenery--wallpaper.jpeg">-->
     <div class="form-box">
-    <form class="form" name="myForm" action="/myaction.php" onsubmit="event.preventDefault(); return validateForm()" method="post">
-        <div class="row">
-            <div class="input-group" id="name">
-                <input type="text" name="fname" ><br><b><span class="formerror"></span></b>
-                <label >Name</label>
-            </div>
-            <div class="input-group" id="phone">
-                <input type="tel" name="fphone"  ><br><b><span class="formerror"></span></b>
-                <label>Phone no.</label>
-            </div>
+        <form class="form" name="myForm" action="/myaction.php" onsubmit="return validateForm()" method="post">
+            <div class="row">
+                <div class="input-group" id="name">
+                    <input type="text" name="fname" required><br><b><span class="formerror"></span></b>
+                    <label><i class="fa-solid fa-user fa-sm"></i>Name </label>
+                </div>
+                <div class="input-group" id="phone">
+                    <input type="tel" name="fphone" required><br><b><span class="formerror"></span></b>
+                    <label> <i class="fa-solid fa-phone fa-sm"></i> Phone no. </label>
+                </div>
             </div>
             <div class="input-group" id="email">
-                <input type="email" name="fmail"><br><b><span class="formerror"></span></b>
-                <label>Email</label>
+                <input type="email" name="fmail" required><br><b><span class="formerror"></span></b>
+                <label> <i class="fa-solid fa-envelope fa-sm"></i>Email </label>
             </div>
             <div class="row">
-            <div class="input-group" id="pass">
-                <input type="password" name="fpass" ><br><b><span class="formerror"></span></b>
-                <label>Password</label>
-            </div>
-            <div class="input-group" id="cpass">
-                <input type="password" name="fcpass"><br><b><span class="formerror"></span></b>
-                <label>Confirm Password</label>
-            </div>
+                <div class="input-group" id="pass">
+                    <input type="password" name="fpass" required><br><b><span class="formerror"></span></b>
+                    <label> <i class="fa-solid fa-key fa-sm"></i> Password </label>
+                </div>
+
+                <div class="input-group" id="cpass">
+                    <input type="password" name="fcpass" required><br><b><span class="formerror"></span></b>
+                    <label> <i class="fa-solid fa-lock fa-sm"></i> Confirm Password </label>
+                </div>
             </div>
             <div class="btnn">
-            <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Submit</button>
             </div>
-    </form>
+        </form>
     </div>
     <script src="../javascript/command.js"></script>
 </body>
+
 </html>

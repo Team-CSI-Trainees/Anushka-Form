@@ -2,56 +2,59 @@
     margin: 0;
     padding:0;
 }
-img{
-width: 100vw;
-height: 100vh;
 
-}
+
 .form-box{
-  position: absolute;
-  left: 33%;
-  top: 30%;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(57, 50, 50, 0.7),#576ec3),url(../images/anime-scenery--wallpaper.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form{
-    margin: 80px;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 90%;
+    max-width: 600px;
 }
 .input-group{
-    position: relative;
-    margin-left: 40px;
     margin-bottom: 30px;
-}
-.formerror{
-    color: red;
+    position: relative;
 }
 input{
     width: 100%;
     padding: 10px;
     outline: 0;
-    background-color: transparent;
-    border: 1px #484848 solid;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
 }
 label{
+    height: 100%;
     position: absolute;
-    height:100%;
-    top:0px;
-    left:2px;
-    color: #484848;
-    transition: 0.5s;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
     cursor: text;
+    transition: 0.5s;
 }
-
-
-input:focus~label
-{
+input:focus~label,input:valid~label{
     top:-35px;
     font-size: 14px;
-    
 }
+input[type=text]:focus,input[type=tel]:focus,input[type=email]:focus,input[type=password]:focus{
+    outline: 1px solid rgb(81, 81, 244) ;
+}
+.formerror{
+    color:rgb(102, 2, 2);
+}
+/*.row{
+    display: flex;
+    justify-content: space-between;
+}*/
 .btnn{
     display: flex;
     justify-content: center;
@@ -59,4 +62,10 @@ input:focus~label
 .btn{
     padding: 10px;
     width: 80px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+
 }
