@@ -12,6 +12,7 @@
 
 <body>
     <div class="form-box">
+       
         <form class="form" name="myForm" action="/myaction.php" onsubmit="return validateForm()" method="post">
             <div class="row">
                 <div class="input-group" id="name">
@@ -27,6 +28,16 @@
                 <input type="email" name="fmail" required><br><b><span class="formerror"></span></b>
                 <label> <i class="fa-solid fa-envelope fa-sm"></i>Email </label>
             </div>
+            <div class="input-group">
+                <div class="gender-in">
+                <input  class="col" type="radio" name="gender">Other
+                
+                <input class="col" type="radio" name="gender">Female
+               
+                <input class="col" type="radio" name="gender">Male
+                
+                </div>
+            </div>
             <div class="row">
                 <div class="input-group" id="pass">
                     <input type="password" name="fpass" required><br><b><span class="formerror"></span></b>
@@ -39,7 +50,7 @@
                 </div>
             </div>
             <div class="btnn">
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn" onclick="Submit()">Submit</button>
             </div>
         </form>
     </div>

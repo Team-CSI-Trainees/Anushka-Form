@@ -14,9 +14,11 @@
     align-items: center;
     justify-content: center;
 }
+
 .form{
     width: 90%;
     max-width: 600px;
+
 }
 .input-group{
     margin-bottom: 30px;
@@ -41,6 +43,21 @@ label{
     cursor: text;
     transition: 0.5s;
 }
+.gender-in{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.gender-in input{
+    position: relative;
+    color: #fff;
+}
+.col{
+    color: #fff;
+}
+
+
 input:focus~label,input:valid~label{
     top:-35px;
     font-size: 14px;

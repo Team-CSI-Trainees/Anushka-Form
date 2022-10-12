@@ -39,7 +39,7 @@ function validateForm() {
     var pass = document.forms["myForm"]["fpass"].value;
 
     if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,20}$/.test(pass) == false) {
-        seterror("pass", "*invalid");
+        seterror("pass", "*password should have atleast 1 uppercase 1 lowercase 1 digit and 1 ! @ # $ % ^ & *");
         return returnVal = false;
     }
 
@@ -54,6 +54,11 @@ function validateForm() {
     if((pass===cpass)==false){
         alert("password and confirm password should match!");
         returnVal=false;
+    }
+    function Submit(){
+        if(returnVal==true){
+        alert("Submitted Succdessfully");
+        }
     }
 
     return returnVal;
